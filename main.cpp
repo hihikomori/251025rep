@@ -39,6 +39,5 @@ int main()
             return 1;
         }
     }
-    std::cout << cnt;
     return cnt;
 }
