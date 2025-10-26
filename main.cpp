@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <iostream>
 #include <limits>
 
@@ -24,7 +23,7 @@ int main()
 
     int cnt = 0;
     while(true){
-        if (a > max / a || b > max / b || c > max / c || a > max){
+        if (a > max / a || b > max / b || c > max / c){
             return 2;
         }
         if(isPyth(a, b ,c)){ 
