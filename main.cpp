@@ -17,14 +17,15 @@ int main()
 {
     unsigned a, b, c;
     unsigned max = std::numeric_limits<unsigned>::max();
+    std::cout << std::numeric_limits<unsigned>::min();
     if (!(std::cin >> a >> b >> c)){
         return 1;
     }
 
     int cnt = 0;
     while(true){
-        if (a > max / a || b > max / b || c > max / c){
-            return 2;
+        if (a > max / a || b > max / b || c > max / c || a + b > max - c){
+            return 2; 
         }
         if(isPyth(a, b ,c)){ 
             cnt++;
